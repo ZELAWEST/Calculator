@@ -54,3 +54,14 @@ button {
    
 
 }
+.zero {
+    flex-grow: 2.3;
+}
+.dot{
+   
+    flex-grow: 1;
+}
+.equal{
+    
+    flex-grow: 1;
+}
