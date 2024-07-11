@@ -27,4 +27,22 @@ body {
     gap: 2px;
     border: solid rgb(56, 53, 53) 3px;
     flex: 1 1 0;
+    box-sizing: border-box; 
+}
+.container>.display,
+.button-grp0,
+.button-grp1,
+.button-grp2,
+.button-grp3,
+.button-grp4 {
+    width: 306px;
+    display: flex;
+    margin-top: 0;
+    flex: 1 1 0;
+    box-sizing: border-box;
+    padding:1px;
+    gap: 3px;
+
+
+
 }
