@@ -56,7 +56,7 @@ function getCalculation() {
                 operator = e.target.textContent
 
             } else {
-                checkSecondNumber(e)
+                checkSecondNumberForDivison(e)
             }
             console.log(firstNumber)
             console.log(operator)
@@ -133,6 +133,15 @@ equal.addEventListener('click', e => {
     if (firstNumber == '' && secondNumber == '') {
         display.textContent = '0'
     } else {
-        checkSecondNumber(e)
+        checkSecondNumberForDivison(e)
     }
 })
+
+clear.addEventListener('click', e => {
+    display.textContent = ''
+    firstNumber = ''
+    operator = ''
+    secondNumber = ''
+}
+
+)
