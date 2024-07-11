@@ -42,7 +42,15 @@ body {
     box-sizing: border-box;
     padding:1px;
     gap: 3px;
-
-
+}
+button {
+    flex: 1 1 0;
+    border: solid rgb(56, 53, 53) 3px;
+    border-radius: 8px;
+    background-color: rgb(43, 168, 43);
+    padding-left: 5px;
+    justify-content: center;
+    align-items: center;
+   
 
 }
