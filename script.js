@@ -23,3 +23,26 @@ let firstNumber = ''
 let operator = ''
 let secondNumber = ''
 let displayContent = ''
+
+function operate(firstNumber, secondNumber, operator) {
+    let answer = 0
+    switch (operator) {
+
+        case "*":
+            answer = multiplicationOperation(firstNumber, secondNumber)
+            break;
+
+        case "/":
+            answer = divisionOperation(firstNumber, secondNumber)
+            break
+
+        case "+":
+            answer = additionOperation(firstNumber, secondNumber)
+            break;
+        case "-":
+            answer = subtractionOperation(firstNumber, secondNumber)
+            break;
+    }
+
+    return answer.toFixed(2)
+}
