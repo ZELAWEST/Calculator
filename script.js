@@ -91,7 +91,7 @@ function getCalculation() {
                 }
                     
             }
-            console.log(secondNumber)
+           
         })
     })
 
