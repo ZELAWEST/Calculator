@@ -63,4 +63,36 @@ function getCalculation() {
         })
 
     })
+
+    digitButtons.forEach(digit => {
+        digit.addEventListener('click', e => {
+            if (operator == '') {
+                firstNumber += e.target.textContent
+                display.textContent = firstNumber + " " + operator
+                console.log(firstNumber)
+            } else if (operator != '') {
+                secondNumber += e.target.textContent
+                console.log(firstNumber[firstNumber.length - 1] == '.')
+                if (firstNumber[firstNumber.length - 1] == '.'){
+                    let temp = firstNumber.slice(0,firstNumber.length - 1)
+                    console.log(temp)
+                    firstNumber = ''
+                    firstNumber = temp
+
+                }
+                if(firstNumber != '' && secondNumber != ''){
+                    display.textContent = firstNumber + ' ' + operator + ' ' + secondNumber
+                }else{
+                    display.textContent = ''
+                    operator = ''
+                    firstNumber = ''
+                    secondNumber = ''
+
+                }
+                    
+            }
+            console.log(secondNumber)
+        })
+    })
+
 }
