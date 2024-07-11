@@ -145,3 +145,4 @@ clear.addEventListener('click', e => {
 }
 
 )
+getCalculation()
