@@ -1,0 +1,6 @@
+let display = document.querySelector('.display')
+let operatorButtons = document.querySelectorAll('.operator')
+let digitButtons = document.querySelectorAll('.digit')
+let equal = document.querySelector('.equals')
+let clear = document.querySelector('#clear')
+let dot = document.querySelector('.dot')
