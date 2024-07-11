@@ -19,3 +19,7 @@ function divisionOperation(a, b) {
 function multiplicationOperation(a, b) {
     return a * b
 }
+let firstNumber = ''
+let operator = ''
+let secondNumber = ''
+let displayContent = ''
