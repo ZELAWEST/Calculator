@@ -110,3 +110,21 @@ dot.addEventListener('click', e => {
         display.textContent = secondNumber
     }
 })
+
+function checkSecondNumberForDivison(event) {
+    if (firstNumber != '' && secondNumber != '' && operator != '') {
+        if (+firstNumber / +secondNumber != 'Infinity') {
+            firstNumber = operate(firstNumber, secondNumber, operator)
+            display.textContent = firstNumber
+            secondNumber = ''
+            if (event.target.textContent != '=') {
+                operator = event.target.textContent
+            }
+        } else {
+            display.textContent = "use diffent number"
+            secondNumber = ''
+            // operator = ''
+        }
+
+    }
+}
