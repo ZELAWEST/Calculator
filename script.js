@@ -96,3 +96,17 @@ function getCalculation() {
     })
 
 }
+dot.addEventListener('click', e => {
+    if (!firstNumber.includes('.') && firstNumber != '') {
+        firstNumber += '.'
+    } else if (!firstNumber.includes('.') && firstNumber == '') {
+        firstNumber += '0.'
+        display.textContent = firstNumber
+    }
+    if (!secondNumber.includes('.') && secondNumber != '') {
+        secondNumber += '.'
+    } else if (!operator == '' && !secondNumber.includes('.') && secondNumber == '') {
+        secondNumber += '0.'
+        display.textContent = secondNumber
+    }
+})
