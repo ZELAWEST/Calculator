@@ -65,3 +65,19 @@ button {
     
     flex-grow: 1;
 }
+.display {
+    display: flex;
+    font-size: 36px;
+    flex-wrap: wrap;
+    font-weight: bolder;
+    justify-content: flex-end;
+    align-items:flex-end ;
+    width: 305px;
+    height: 60px;
+    background-color: rgb(187, 181, 181);
+    border: solid rgb(56, 53, 53) 3px;
+    box-sizing: border-box;
+    text-align: right;
+    overflow:hidden;
+   
+}
