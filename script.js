@@ -128,3 +128,11 @@ function checkSecondNumberForDivison(event) {
 
     }
 }
+
+equal.addEventListener('click', e => {
+    if (firstNumber == '' && secondNumber == '') {
+        display.textContent = '0'
+    } else {
+        checkSecondNumber(e)
+    }
+})
