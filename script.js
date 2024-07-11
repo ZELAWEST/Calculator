@@ -46,3 +46,21 @@ function operate(firstNumber, secondNumber, operator) {
 
     return answer.toFixed(2)
 }
+
+function getCalculation() {
+    operatorButtons.forEach(ope => {
+
+        ope.addEventListener('click', e => {
+            display.textContent = ''
+            if (secondNumber == '') {
+                operator = e.target.textContent
+
+            } else {
+                checkSecondNumber(e)
+            }
+            console.log(firstNumber)
+            console.log(operator)
+        })
+
+    })
+}
